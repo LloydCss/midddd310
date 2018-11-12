@@ -1,7 +1,7 @@
 const key = "pWExA8r3QhEJ79LAnX6LhYQ7Y5sQvQxd"
 const quiz = [
     {
-        question: "What is your favorite color?",
+        question: "What is your mood right now?",
         answers: [
             {
                 src: "anger",
@@ -33,7 +33,7 @@ const quiz = [
                 score: 3
             },
             {
-                src: "hanging out",
+                src: "fighting",
                 score: 20
             },
             {
@@ -46,7 +46,7 @@ const quiz = [
         question: "What is your favorite hobby?",
         answers: [
             {
-                src: "sing",
+                src: "singing",
                 score: 15
             },
             {
@@ -64,7 +64,7 @@ const quiz = [
 		]
 	},
     {
-        question: "Do you even believe in horoscopes??",
+        question: "Do you even have a personality??",
         answers: [
             {
                 src: "yes",
@@ -166,16 +166,16 @@ resultsBtn.onclick = function () {
     }
     const response = document.getElementById('response');
     if (score > 60) {
-        response.textContent = "You are a cancer.";
+        response.textContent = "You are a Angry Person.";
     } else if (score > 50) {
-        response.textContent = " You are a ARIES.";
+        response.textContent = " You are a Depressed Person.";
     } else if (score > 40) {
-        response.textContent = " You are a Tarus.";
+        response.textContent = " You are a Funny Person.";
     } else if (score > 30) {
-        response.textContent = " You are a Capricorn.";
+        response.textContent = " You are a Serious Person.";
     } else if (score > 20) {
-        response.textContent = " You are a Gemini.";
+        response.textContent = " You are a Loving Person.";
     } else if (score > 10) {
-        response.textContent = " You are a Leo.";
+        response.textContent = " You are a Horrible Person.";
     }
 };
